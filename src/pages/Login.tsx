@@ -15,7 +15,7 @@ const Login = ({ navigation }: { navigation: any }) => {
                     style={globalStyles.formInput}
                 />
             </View>
-            <Pressable style={globalStyles.buttonLogin} onPress={() => navigation.navigate('Home')}>
+            <Pressable style={globalStyles.buttonLogin} onPress={() => navigation.reset({index: 0, routes: [{name: 'Home'}]})}>
                 <Text style={globalStyles.buttonText}>Sign In</Text>
             </Pressable>
             <Text style={globalStyles.buttonTextLink} onPress={() => navigation.navigate('Register')}>Don't have an account? Sign Up Now</Text>

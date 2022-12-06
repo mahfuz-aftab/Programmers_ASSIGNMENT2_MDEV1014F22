@@ -29,6 +29,7 @@ const Register = ({ navigation }: { navigation: any }) => {
       <Pressable style={globalStyles.buttonSignup} onPress={confirmSignup}>
         <Text style={globalStyles.buttonText}>Sign Up</Text>
       </Pressable>
+      <Text style={globalStyles.buttonTextLink} onPress={() => navigation.navigate('Login')}>Already have an account? Sign In Now</Text>
     </SafeAreaView>
   )
 }
