@@ -20,10 +20,10 @@ const Register = ({ navigation }: { navigation: any }) => {
     <SafeAreaView style={globalStyles.wrapperGuest}>
       <Text style={globalStyles.formLabel}>Sign Up</Text>
       <View>
-        <TextInput placeholder="First Name" style={globalStyles.formInput} />
-        <TextInput placeholder="Last Name" style={globalStyles.formInput} />
-        <TextInput placeholder="Email" style={globalStyles.formInput} />
-        <TextInput secureTextEntry={true} placeholder="Password" style={globalStyles.formInput} />
+        <TextInput placeholder="First Name" style={globalStyles.formInput} keyboardType="default" />
+        <TextInput placeholder="Last Name" style={globalStyles.formInput} keyboardType="default" />
+        <TextInput placeholder="Email" style={globalStyles.formInput} keyboardType="email-address" />
+        <TextInput secureTextEntry={true} placeholder="Password" style={globalStyles.formInput} keyboardType="default" />
       </View>
 
       <Pressable style={globalStyles.buttonSignup} onPress={confirmSignup}>
