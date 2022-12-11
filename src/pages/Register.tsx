@@ -11,7 +11,7 @@ const Register = ({ navigation }: { navigation: any }) => {
           text: "Cancel",
           onPress: () => console.log("Cancel Pressed"),
         },
-        { text: "OK", onPress: () => navigation.navigate('Home') }
+        { text: "OK", onPress: () => navigation.navigate('BottomTabNavigator') }
       ]
     );
   }

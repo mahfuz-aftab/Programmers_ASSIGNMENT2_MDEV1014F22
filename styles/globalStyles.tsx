@@ -72,6 +72,12 @@ export const globalStyles = StyleSheet.create({
         borderRadius: 4,
         backgroundColor: '#0047AB',
     },
+
+    buttonLogoutText: {
+        color: '#fff',
+        fontWeight: '700',
+    },
+
     buttonSignup: {
         alignItems: 'center',
         justifyContent: 'center',

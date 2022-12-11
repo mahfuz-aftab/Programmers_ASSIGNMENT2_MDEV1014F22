@@ -3,13 +3,13 @@ import React from 'react';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 
-import TopStories from './TopStories';
-import NewsList from './NewsList';
-import ChannelList from './ChannelList';
+import TopStories from '../pages/TopStories';
+import NewsList from '../pages/NewsList';
+import ChannelList from '../pages/ChannelList';
 
 
 const Tabs = createBottomTabNavigator()
-const Home = () => {
+const BottomTabNavigator = () => {
     return (
                   <Tabs.Navigator>
                     <Tabs.Screen name="Top Stories" component={TopStories} options={{title: "Top Stories", tabBarIcon:({color, size})=><MaterialCommunityIcons name="arrow-top-right" size={24} color={color} />}}/>
@@ -19,4 +19,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default BottomTabNavigator;

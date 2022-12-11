@@ -21,6 +21,7 @@ const NewsDetails = () => {
                 </View>
             </ScrollView>
         </SafeAreaView>
+
     )
 }
 

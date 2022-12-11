@@ -60,9 +60,8 @@ const Login = ({ navigation }: { navigation: any }) => {
                     return;
                 }
                  else {
-                    navigation.navigate('Home')
+                    navigation.navigate('BottomTabNavigator')
                 }}}>
-            {/* <Pressable style={globalStyles.buttonLogin} onPress={() => navigation.reset({index: 0, routes: [{name: 'Home'}]})}> */}
                 <Text style={globalStyles.buttonText}>Sign In</Text>
             </Pressable>
             <Text style={globalStyles.buttonTextLink} onPress={() => navigation.navigate('Register')}>Don't have an account? Sign Up Now</Text>
