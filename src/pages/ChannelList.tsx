@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, View, SafeAreaView, Pressable, Image, ScrollView } from 'react-native';
-
 import { globalStyles } from '../../styles/globalStyles';
 
 const ChannelList = ({ navigation }: { navigation: any }) => {

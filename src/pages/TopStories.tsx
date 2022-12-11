@@ -1,17 +1,24 @@
 import React from 'react';
 import { Text, View, SafeAreaView, Image, ScrollView } from 'react-native';
+
 import { globalStyles } from '../../styles/globalStyles';
 
-const NewsDetails = () => {
+
+const TopStories = () => {
     return (
+
         <SafeAreaView style={globalStyles.wrapper}>
             <ScrollView>
                 <View>
-                    <Text style={globalStyles.title}>New Playground Opening in Barrie</Text>
+                  <Text style={globalStyles.title}>Welcome to Barrie Newz App</Text>
+                  <Text style={globalStyles.subTitle}>Top Stories in Barrie</Text>
+                </View>
+                <View>
+                    <Text style={globalStyles.title}>Georgian College Hosting Career Event</Text>
                 </View>
 
                 <View>
-                    <Image style={globalStyles.articleSingleImage} source={require('./../../assets/app/Park.jpg')} />
+                    <Image style={globalStyles.articleSingleImage} source={require('./../../assets/app/career.jpg')} />
                 </View>
 
                 <View style={globalStyles.articleSingleBox}>
@@ -21,8 +28,7 @@ const NewsDetails = () => {
                 </View>
             </ScrollView>
         </SafeAreaView>
-
     )
 }
 
-export default NewsDetails;
+export default TopStories;
