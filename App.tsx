@@ -15,16 +15,14 @@ export default function App() {
   return (
     <NavigationContainer>
       <Header></Header>
-      <Stack.Navigator initialRouteName="Login Page" screenOptions={{headerShown: false}}>
+      <Stack.Navigator initialRouteName="Login Page" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Register" component={Register}/>
+        <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="BottomTabNavigator" component={BottomTabNavigator} />
         <Stack.Screen name="Newz Channels" component={ChannelList} />
         <Stack.Screen name="All Newz" component={NewsList} />
         <Stack.Screen name="Newz Details" component={NewsDetails} />
       </Stack.Navigator>
-
     </NavigationContainer>
-
   );
 }

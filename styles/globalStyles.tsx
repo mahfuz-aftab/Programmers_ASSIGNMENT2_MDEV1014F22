@@ -170,6 +170,18 @@ export const globalStyles = StyleSheet.create({
         width: '100%',
         height: '100%',
         borderRadius: 10
-    }
+    },
+
+    // Back Button
+    backButton: {
+        fontSize: 18,
+        paddingLeft: 16,
+        paddingRight: 16,
+        height: 64,
+        lineHeight: 64,
+        backgroundColor: '#FFFFFF',
+        flex: 1,
+        justifyContent: 'center',
+    },
 
 });

@@ -3,16 +3,15 @@ import { Text, View, SafeAreaView, Pressable, TextInput, Alert } from 'react-nat
 
 import { globalStyles } from '../../styles/globalStyles';
 
-
 const Register = ({ navigation }: { navigation: any }) => {
   function confirmSignup() {
-    Alert.alert("Sign Up Confirmation", "Is your all input correct?", [
+    Alert.alert('Sign Up Confirmation', 'Is your all input correct?', [
         {
-          text: "Cancel",
-          onPress: () => console.log("Cancel Pressed"),
+          text: 'Cancel',
+          onPress: () => console.log('Cancel Pressed'),
         },
-        { text: "OK", onPress: () => navigation.navigate('BottomTabNavigator') }
-      ]
+        { text: 'OK', onPress: () => navigation.navigate('BottomTabNavigator') },
+      ],
     );
   }
 
@@ -29,9 +28,10 @@ const Register = ({ navigation }: { navigation: any }) => {
       <Pressable style={globalStyles.buttonSignup} onPress={confirmSignup}>
         <Text style={globalStyles.buttonText}>Sign Up</Text>
       </Pressable>
-      <Text style={globalStyles.buttonTextLink} onPress={() => navigation.navigate('Login')}>Already have an account? Sign In Now</Text>
+      <Text style={globalStyles.buttonTextLink} onPress={() => navigation.navigate('Login')}>Already have an account?
+        Sign In Now</Text>
     </SafeAreaView>
-  )
-}
+  );
+};
 
 export default Register;
